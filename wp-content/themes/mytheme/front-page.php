@@ -21,7 +21,7 @@ get_header(secondary);?>
           </div>          
         </div>
         <div class="banner-text">
-          <h3>PANKAJ KUMAR</h3>
+          <h3>PANKAJ KUMR</h3>
           <h5>WEB DESIGNER AT <a href="http://appwrk.com" target="_blank" rel="noopener noreferrer"> APPPWRK IT SOLUTIONS</a></h5>
           <button  class="cvBtn btn">
             Download Cv <i class="fa fa-download ml-1" aria-hidden="true"></i>
