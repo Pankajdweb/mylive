@@ -1,0 +1,593 @@
+/* 
+Theme Name: My Theme
+Author: Pankaj Prajapati
+
+*/
+
+body{
+    background-color: #f7f7f7;
+}
+.mysub-heading {
+
+    color: #dbd5dd;
+    margin: 0;
+  
+}
+.myheading {
+    color: #faed26;
+    margin: 0;
+}
+
+
+.my-header{
+    opacity: 1;
+    transform: translateY(0);
+    padding: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+#momoland {
+    width: 100%;
+    height: 100%;
+    
+   
+  }
+
+  .wrapper {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.bannersec{
+    background-image: url('http://pankajkumar.me/wp-content/uploads/2020/08/banner-back.png');
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+}
+@media only screen and (max-width: 600px) {
+    .bannersec
+    {
+        background-image: url('http://pankajkumar.me/wp-content/uploads/2020/08/banner-mob-back.png');
+        background-position: -50px center;
+    }
+
+}
+.scrool-header{
+    background-color: black!important;
+}
+
+.home-header .logo {
+    width: 180px;
+}
+.home-header .logo  img {
+    max-width: 100%;
+}
+#menu li {
+	display:inline-block;
+	margin: 0 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 5px 10px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+
+.home-header{
+    /* border-bottom: 0.8px solid #736f6f; */
+    background-color: rgba(0,0,0, 0.5);
+    padding: 0.3em;
+}
+
+.home-header{
+    color: white;
+}
+.home-header .container
+{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.home-header  .menu-home ul
+{
+    margin: 0;padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-header .container {
+        /* flex-direction: column; */
+    }
+    .home-header  .menu-home ul {
+        zoom: 50%;
+    }
+
+}
+
+.home-header .logo h3{
+   color: #ffb303;
+   color: #0003ff;
+}
+
+/* banner section start */
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-circle{
+    
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+.profile-circle::before
+{
+    content: '';
+    border-radius: 100%;
+    
+    width: 210px;
+    position: absolute;
+    height: 210px;
+    animation: backscale 2s infinite;
+    z-index: -1;
+  
+}
+@keyframes backscale {
+	0% {
+        transform: scale(1);
+        background-color: rgba(0, 0, 0, 0.4);
+    }	
+ 50% {
+     transform: scale(1.1);
+     background-color: rgba(0, 0, 0, 0.1);
+    } 
+  100% {
+      transform: scale(1);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+.circle-inner{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text {
+    text-align: center;
+}
+.circle-img {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border:5px solid #faed26;
+    overflow: hidden;
+    position: relative;
+}
+.circle-img  img {
+    max-width: 100%;
+}
+.banner-text{
+    margin-top: 1.5rem;
+}
+.banner-text h3 {
+    color: #faed26;
+    font-size: 2.2rem;
+}
+.banner-text h5 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.banner-text a {
+    text-decoration: none;
+    color: inherit;
+}
+.cvBtn {
+    margin-top: 1rem;
+    border-width: 3px;
+    border-color: rgb(250, 237, 38);
+    border-style: solid;
+    background-color: rgb(91, 85, 96);
+    border-radius: 40px;
+    padding: 8px 22px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.scrollBtn {
+    margin-top: 30px;
+    width: 35px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid #faed26;
+    position: relative;
+}
+
+.scrollBtn .dot {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 100%;
+    animation: scroolcir 5s infinite;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+@keyframes scroolcir {
+	0% {top: 10%;}	
+ 50% {top: 70%;} 
+  100% {top: 10%;}
+}
+
+
+/* baneer section end */
+
+
+/* abt section css */
+
+.aboutsec{
+
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+
+}
+.abt-img-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color:red; */
+    padding: 20px 20px 0 0;
+}
+
+.img-side{
+    
+    width: 100%;
+    max-width: 350px;
+    min-height: 450px;
+    height: 70vh;
+    position: relative;
+    border: 3px solid yellow;
+    
+}
+.img-box{
+    width: 100%;
+    height: 100%;
+    float: right;
+    position: relative;
+    background-color: black;
+    transform: translate(20px , -20px);
+}
+
+.img-box img{
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.abt-side {
+    /* background-color: blue; */
+}
+.abt-head .main-heading{
+    position: relative;
+    color: #46344e;
+    font-weight: 600;
+    font-size: 30px;
+}
+.abt-head .main-heading::before {
+    width: 70px;
+    background-color: #faed26;
+    height: 2px;
+    position: absolute;
+    content: '';
+    bottom: -5px;
+}
+
+
+.abt-head p{
+    color: #5b5560;
+    font-size: 16px;
+    font-weight: 400;
+}
+.light-heading {
+    font-size: 20px;
+    color:#dbd5dd;
+    font-weight: 500;
+}
+.personal-info  {
+    
+   
+    border-spacing: 20px 5px;
+    border-collapse: separate;
+    
+   margin: 0 -20px;
+   /* *border-collapse: expression('separate', cellSpacing = '20px'); */
+}
+.personal-info td {
+    color: #46344e;
+    font-weight: 600;
+    font-size: 20px;
+ }
+
+    .interest  ul {
+        list-style: none;
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .interest  ul li{
+        width: 65px;
+        height: 65px;
+        border: 1px solid rgb(219, 213, 221);
+        background-color: rgb(70, 52, 78);
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 5px;
+    }
+    .interest  ul li:hover{
+        border: 1px solid  rgb(70, 52, 78);
+        background-color: #ffffff;
+        color: rgb(70, 52, 78);
+    }
+
+    .interest  ul li i{
+        font-size: 22px;
+    }
+    .interest  ul li span{
+        font-size: 10px;
+        margin-top: 2px;
+
+    }
+
+
+    @media only screen and (max-width: 600px) {
+     .abt-img-col {
+         display: none;
+     }
+
+    }
+
+/* abt section  end css */
+
+
+
+/* skill section start */
+
+.skills-sec {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#23cc48; */
+    background-image: url('http://pankajkumar.me/wp-content/uploads/2020/08/skill-background.png');
+}
+.skill-heading {
+    position: relative;
+    color: #faed26;
+    font-weight: 600;
+font-size: 30px;
+
+}
+.skill-heading::before
+{
+    width: 50px;
+    background-color: #faed26;
+    height: 2px;
+    position: absolute;
+    content: '';
+    bottom: -5px;
+}
+.skill-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.skills-col{
+    width: 25%;
+    padding: 1rem;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .skills-col{
+        padding: 0.5rem 0.5rem 0 0.5rem;
+    }
+  }
+
+.skill-inner{
+    background-color:rgba(0, 0, 0, 0.25);
+    width: 100%;
+    color: #faed26;
+    position: relative;
+}
+.skill-inner .progress{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    height: 5px;
+}
+.skill-des h5{
+    margin: 0;
+}
+.skill-des p {
+    font-size: 12px;
+    color: #dbd5dd;
+    width: 100%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.skill-box{
+    padding: 15px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.skillcount h5 {
+    margin: 0;
+}
+.skillcount p{
+    color: white;
+}
+.skill-inner .progress {
+    background-color: transparent;
+}
+.skill-inner .progress .progress-bar {
+    background-color: #faed26;
+}
+
+.social-container {
+    margin-top: 2rem;
+}
+.social-heading {
+    font-size: 25px;
+    text-align: center;
+}
+.social-row{
+    display: flex;
+    justify-content: center;
+    max-width: 1080px;
+    margin-top: 2rem;
+}
+
+
+
+.social-col {
+    margin-right: 1.5rem;
+
+
+}
+.social-col:last-child{
+    margin-right: 0;
+}
+.social-inner {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid #faed26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dbd5dd;
+    transition: 1s;
+}
+.social-inner a {
+    text-decoration: none;
+    color: #dbd5dd;
+}
+.social-inner:hover a {
+    text-decoration: none;
+     color: #46344e;
+}
+.social-inner:hover{
+    background-color: #faed26;
+   
+    
+}
+.social-inner i {
+        font-size: 25px;
+        
+}
+
+
+
+/* media uqery for skills section */
+
+@media only screen and (max-width: 1180px) {
+    .skills-col{
+        width: 50%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .skills-col{
+        /* width: 100%; */
+        zoom: 70%;
+    }
+    .skill-des p{
+        display: none;
+    }
+
+    .skill-box {
+        padding-bottom: 15px;
+    }
+  }
+
+
+/* skill section end */
+
+
+
+
+
+
+
+/* footer css */
+.basic-footer {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.basic-footer span {
+    color: white;
+    font-size: 15px;
+}
+
